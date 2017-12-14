@@ -93,7 +93,7 @@ public class ClassLoaderObjectInputStream extends ObjectInputStream {
         try {
             return Proxy.getProxyClass(classLoader, interfaceClasses);
         } catch (final IllegalArgumentException e) {
-            return super.resolveProxyClass(interfaces)
+            return super.resolveProxyClass(interfaces);
         }
     }
 
